@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> RBU EVENTS | Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] text-white min-h-screen">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#1e293b]/80 backdrop-blur border-b border-white/10 shadow-md">
+    <div class="max-w-7xl mx-auto px-6">
+      <nav class="flex justify-between items-center h-16">
+        <a href="/" class="flex items-center gap-2">
+          <img src="/gdgico.svg" alt="GDG Logo" class="w-10 h-10" />
+          <span class="text-xl font-semibold text-white">  EVENTS-PORTAL</span>
+        </a>
+        <div class="hidden md:flex gap-6 items-center text-sm">
+          <a href="home.html" class="hover:text-blue-400 transition">Home</a>
+          <a href="club info.html" class="hover:text-blue-400 transition"> Club Info</a>
+          <a href="signin.html" class="px-4 py-2 border border-white rounded hover:bg-white hover:text-[#0f2027] transition">Sign In</a>
+          
+         
+         
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Form Section -->
+  <main class="pt-28 pb-20 px-4 flex justify-center">
+    <form action="home.html" method="POST" class="w-full max-w-xl bg-white/10 backdrop-blur-sm p-8 rounded-lg shadow-xl border border-white/20 space-y-6">
+      <h2 class="text-3xl font-bold text-center text-white drop-shadow">Register</h2>
+
+      <div>
+        <label for="fname" class="block mb-1 font-semibold">First Name</label>
+        <input type="text" id="fname" name="FirstName" required class="w-full p-3 rounded bg-white/20 text-white placeholder-gray-300 border border-white/20 focus:ring-2 focus:ring-blue-500" placeholder="e.g. allu" />
+      </div>
+
+      <div>
+        <label for="lname" class="block mb-1 font-semibold">Last Name</label>
+        <input type="text" id="lname" name="LastName" required class="w-full p-3 rounded bg-white/20 text-white placeholder-gray-300 border border-white/20 focus:ring-2 focus:ring-blue-500" placeholder="e.g. arjun" />
+      </div>
+
+      <div>
+        <label for="email" class="block mb-1 font-semibold">Email</label>
+        <input type="email" id="email" name="Email" required class="w-full p-3 rounded bg-white/20 text-white placeholder-gray-300 border border-white/20 focus:ring-2 focus:ring-blue-500" placeholder="xyz@gmail.com" />
+      </div>
+
+      <div>
+        <label for="mob" class="block mb-1 font-semibold">Mobile Number</label>
+        <input type="text" id="mob" name="Mobilenumber" required class="w-full p-3 rounded bg-white/20 text-white placeholder-gray-300 border border-white/20 focus:ring-2 focus:ring-blue-500" placeholder="+91 XXXXX XXXXX" />
+      </div>
+
+      <div class="flex gap-4">
+        <div class="w-1/2">
+          <label for="branch" class="block mb-1 font-semibold">Branch</label>
+          <input type="text" id="branch" name="Branch" class="w-full p-3 rounded bg-white/20 text-white placeholder-gray-300 border border-white/20 focus:ring-2 focus:ring-blue-500" placeholder="CSE, IT..." />
+        </div>
+        <div class="w-1/2">
+          <label for="section" class="block mb-1 font-semibold">Section</label>
+          <input type="text" id="section" name="Section" class="w-full p-3 rounded bg-white/20 text-white placeholder-gray-300  border border-white/20 focus:ring-20 focus:ring-blue-500" placeholder="A, B..." />
+        </div>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-2">Gender</p>
+        <div class="flex gap-6">
+          <label><input type="radio" name="Gender" value="Male" required /> Male</label>
+          <label><input type="radio" name="Gender" value="Female" /> Female</label>
+          <label><input type="radio" name="Gender" value="Other" /> Other</label>
+        </div>
+      </div>
+
+      <div class="text-center pt-4">
+        <button type="submit" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-10 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:scale-105">
+          Register Now  
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1e293b] text-white py-6 border-t border-white/10">
+    <div class="text-center space-y-1 text-sm">
+      <p>Shri Ramdeobaba College of Engineering and Management</p>
+      <p>Ramdeo Tekdi, Gittikhadan, Katol Road, Nagpur - 440013</p>
+      <p>Email: <a href="mailto:dsc.rknec@gmail.com" class="underline text-blue-400 hover:text-blue-300">dsc.rknec@gmail.com</a></p>
+    </div>
+    <div class="flex justify-center mt-4 gap-6">
+      <a href="#"><img src="twitter.png" alt="Twitter" class="w-6 h-6 hover:opacity-75" /></a>
+      <a href="#"><img src="insta.png" alt="Instagram" class="w-6 h-6 hover:opacity-75" /></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn" class="w-6 h-6 hover:opacity-75" /></a>
+    </div>
+  </footer>
+</body>
+</html>
